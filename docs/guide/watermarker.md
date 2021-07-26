@@ -3,7 +3,7 @@
 ## 正常用法
 ```vue
 <template>
-  <div class="background" v-watermarker="'zery版权所有'"></div>
+  <div class="background" v-watermarker="'directives版权所有'"></div>
 </template>
 
 <style scoped>
@@ -13,7 +13,7 @@
 </style>
 ```
 <template>
-  <div class="background" v-watermarker="'zery版权所有'"></div>
+  <div class="background" v-watermarker="'directives版权所有'"></div>
 </template>
 
 <style scoped>
@@ -25,7 +25,7 @@
 ## 修改颜色
 ```vue
 <template>
-  <div class="background" v-watermarker="'zery版权所有'" watermarker-text-color="yellow"></div>
+  <div class="background" v-watermarker="'directives版权所有'" watermarker-text-color="yellow"></div>
 </template>
 
 <style scoped>
@@ -35,7 +35,7 @@
 </style>
 ```
 <template>
-  <div class="background" v-watermarker="'zery版权所有'" watermarker-text-color="yellow"></div>
+  <div class="background" v-watermarker="'directives版权所有'" watermarker-text-color="yellow"></div>
 </template>
 
 ## 属性设置

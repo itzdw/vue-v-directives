@@ -17,8 +17,8 @@ yarn add vue-v-directives
 ```javascript
 // main.js
 import Vue from 'vue'
-import zery from 'vue-v-directives'
-Vue.use(zery)
+import directives from 'vue-v-directives'
+Vue.use(directives)
 ```
 3. 使用
 ```vue
@@ -31,7 +31,7 @@ Vue.use(zery)
 export default {
   data() {
     return {
-      text: 'zery'
+      text: 'directives'
     }
   },
   methods: {
@@ -49,12 +49,12 @@ export default {
 
 <script>
 import Vue from 'vue'
-import zery from '@/index.js'
-Vue.use(zery)
+import directives from '@/index.js'
+Vue.use(directives)
 export default {
   data() {
     return {
-      text: 'zery'
+      text: 'directives'
     }
   },
   methods: {
@@ -67,6 +67,6 @@ export default {
 
 ## 防止冲突，按需加载
 ```javascript
-zery.use(['watermarker', 'copy', 'longpress'])
-Vue.use(zery)
+directives.use(['watermarker', 'copy', 'longpress'])
+Vue.use(directives)
 ```

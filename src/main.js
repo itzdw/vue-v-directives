@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import app from './App.vue'
-import zery from './index'
+import directives from './index'
 
-Vue.use(zery)
+Vue.use(directives)
 
 new Vue({
   el: '#app',
