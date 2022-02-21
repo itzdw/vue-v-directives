@@ -23,7 +23,7 @@
 设置权限列表
 1. 方式一
 ```javascript
-import directives from 'vue-v-directives'
+import directives from 'v-directivejs'
 directives.setOption({
   permission: {
     list: ['A', 'B', 'C', 'D']

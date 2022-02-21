@@ -1,10 +1,12 @@
 // 复制
 import {getAttr} from '@/utils/utils'
 
+const noop = () => {}
+
 const copy = {
   bind(el, binding) {
     el.value = getAttr(el, 'copy-text', '')
-    el.sunccess = binding.value || noop
+    el.success = binding.value || noop
     el.handler  = () => {
       const textarea = document.createElement('textarea')
       textarea.readOnly = 'readonly'
@@ -15,7 +17,7 @@ const copy = {
       textarea.select()
       const result = document.execCommand('Copy')
       if (result) {
-        el.sunccess(el.value)
+        el.success(el.value)
       }
       document.body.removeChild(textarea)
     }
@@ -26,11 +28,8 @@ const copy = {
   },
   componentUpdated(el, binding) {
     el.value = getAttr(el, 'copy-text', '')
-    el.sunccess = binding.value || noop
+    el.success = binding.value || noop
   }
 }
-
-
-const noop = () => {}
 
 export default copy

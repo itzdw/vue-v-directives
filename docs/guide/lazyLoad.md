@@ -57,7 +57,7 @@ ul.container li img {
 1. 方式一
 ```javascript
 // main.js
-import directives from 'vue-v-directives'
+import directives from 'v-directivejs'
 directives.setOption({
   lazyLoad: {
     default: 'xxxx.png'

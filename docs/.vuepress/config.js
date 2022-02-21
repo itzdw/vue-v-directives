@@ -6,23 +6,25 @@ function resolve(_path) {
 }
 
 module.exports = {
-  title: 'vue-v-directives',
+  title: 'v-directivejs',
   description: 'vue自定义指令扩展',
   host: '127.0.0.1',
   port: '8090',
-  base: '/vue-v-directives/',
+  base: '/v-directivejs/',
   themeConfig: {
     nav: [
       { text: '主页', link: '/' },
       { text: '指南', link: '/guide/' },
-      { text: 'Github', link: 'https://github.com/itzdw/vue-v-directives/'}
+      { text: 'Github', link: 'https://github.com/itzdw/v-directivejs/'}
     ],
     sidebar: [
-      '/guide/clickOutside',
       '/guide/copy',
       '/guide/countdown',
+      '/guide/clickOutside',
       '/guide/debounce',
       '/guide/draggable',
+      '/guide/downloadUrl',
+      '/guide/disabled',
       '/guide/ellipsis',
       '/guide/focus',
       '/guide/formatter',

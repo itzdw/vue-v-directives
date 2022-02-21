@@ -26,7 +26,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve('src/index.js'),
-      name: 'vue-v-directives'
+      name: 'v-directivejs'
     },
     rollupOptions: {
       external: ['vue'],

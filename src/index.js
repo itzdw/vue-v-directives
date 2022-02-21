@@ -3,10 +3,12 @@ import {humptoLine, overwrite} from 'utils/utils'
 // databus
 import Databus from 'utils/databus.js'
 // directives
-import clickOutside from './directives/clickOutside.js';
+import clickoutside from './directives/clickoutside.js';
 import copy from './directives/copy.js';
 import countdown from './directives/countdown.js';
 import debounce from './directives/debounce.js';
+import disabled from './directives/disabled.js';
+import downloadUrl from './directives/downloadUrl.js';
 import draggable from './directives/draggable.js';
 import ellipsis from './directives/ellipsis.js';
 import focus from './directives/focus.js';
@@ -22,11 +24,13 @@ import watermarker from './directives/watermarker.js';
 
 let databus = new Databus()
 
-const directives = {
-  clickOutside,
+const temp_directives = {
+  clickoutside,
   copy,
   countdown,
   debounce,
+  disabled,
+  downloadUrl,
   draggable,
   ellipsis,
   focus,
@@ -49,11 +53,11 @@ const directives = {
   },
   install(Vue) {
     if (!this.useList) {
-      this.useList = Object.keys(directives)
+      this.useList = Object.keys(temp_directives)
     }
     this.useList.forEach(item => {
-      if (directives[item]) {
-        Vue.directive(humptoLine(item), directives[item])
+      if (temp_directives[item]) {
+        Vue.directive(humptoLine(item), temp_directives[item])
       } else {
         throw new Error('不存在该指令')
       }
